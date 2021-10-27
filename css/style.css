@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap');
+
+:root {
+    --light-clr: #f1eee8;
+    --dark-clr: #222222;
+    --accent-clr: #ce6e00;
+    --green: #71ad2b;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-clr);
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: var(--dark-clr);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px 0px 10px 0px;      
+}
+
+header {
+    background-image: linear-gradient(rgb(0, 0, 0), #0000004f), url(https://www.visittromso.no/sites/cb_tromso/files/styles/article_slide_large/public/2019_02_26_VT_Troms%E2%94%9C%C2%A9-66.jpg?h=92704f59&itok=67y1onl5) ;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+/*
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}  */
+
+#spis-meny {
+    text-align: center;
+    max-width: 800px;
+    padding: 75px 20px;
+}
+@media only screen and (min-width: 800px) {
+    .spis-menu {
+        padding: 100px;
+        max-width: 800px;
+        line-height: 35px;      
+    }
+}
+
+.spis-meny-logo {
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.spis-meny p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+/*-----------MAIN / MENY-------------*/
+
+main {
+    max-width: 400px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+
+@media only screen and (min-width: 700px) {
+    main {
+        max-width: 800px;
+        padding: 20px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+      }
+}
+@media only screen and (min-width: 1100px) {
+    main {
+        max-width: 1200px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+}
+@media only screen and (min-width: 2000px) {
+    main {
+        max-width: 1700px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+}
+
+.menu-item {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ffffff;
+    transition: .2s ease-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+}
+
+.menu-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.menu {
+    padding: 1em;
+}
+
+
+footer {
+    background-color: var(--dark-clr);
+    color: var(--light-clr);
+    text-align: center;
+    padding: 100px 0px;
+    margin-top: 100px;
+}
+
+.footer-text {
+    max-width: 500px;
+    padding: 0px 20px;
+}
+
+.footer-text p {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 120px;
+}
+
+/*-----------TYPOGRAFI-------------*/
+
+h1 {
+    letter-spacing: -1px;
+    font-size: 3rem;
+    color: var(--light-clr);
+    margin-bottom: 2rem;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.432);
+}
+
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 90px;
+        line-height: 1em;
+        padding: 0px 40px;
+    }
+}
+
+h2 {
+    font-size: 100px;
+    line-height: 1em;
+    margin-bottom: 0.3em;
+    font-family: 'Satisfy', cursive;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: 32px;
+}
+
+@media only screen and (min-width: 800px) {
+    h3 {
+        margin-bottom: 15px;
+        font-size: 24px
+    }
+}
+
+.time {
+    font-size: 14px;
+    color: rgb(124, 124, 124);
+    margin-bottom: 10px;
+}
+
+.menu-text {
+    margin-bottom: 10px;
+}
+
+.spis2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+.allergener {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(124, 124, 124);
+}
+
+.take-away,
+.vegetar {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background-color: var(--accent-clr);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 6px;
+    border-radius: 100%;
+    text-align: center;
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.vegetar {
+    background-color: var(--green);
+}
+
+.veg-mark {
+    width: 70%;
+}
+
+button {
+    box-sizing: border-box;
+    padding: 12px 40px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    background-color: var(--accent-clr);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    /* transform: scale(1.05); */
+    background-color: #22222200;
+    border-style: solid;
+    border-color: var(--accent-clr);
+    border-width: 2px;
+}
+
+button a {
+    text-decoration: none;
+
+
+}
