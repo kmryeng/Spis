@@ -34,24 +34,28 @@ nav {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.705), #00000013), url(../img/grill.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), #00000013), url(../img/Grillmat-liten.jpg) ;
     min-height: 600px;
     background-attachment: fixed;
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-items: center;
 }
 
-/*
+header img {
+    box-sizing: content-box;
+    height: 350px;
+    padding: 50px;
+}
+
 .header-text {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-}  */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
 
 #spis-meny {
     text-align: center;
@@ -256,6 +260,7 @@ h3 {
 }
 
 button {
+    display: inline-block;
     box-sizing: border-box;
     padding: 12px 40px;
     border-radius: 50px;
