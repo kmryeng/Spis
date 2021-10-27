@@ -34,10 +34,10 @@ nav {
 }
 
 header {
-    background-image: linear-gradient(rgb(0, 0, 0), #0000004f), url(https://www.visittromso.no/sites/cb_tromso/files/styles/article_slide_large/public/2019_02_26_VT_Troms%E2%94%9C%C2%A9-66.jpg?h=92704f59&itok=67y1onl5) ;
-    min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), #00000013), url(../img/grill.jpg) ;
+    min-height: 600px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -55,7 +55,7 @@ header {
 
 #spis-meny {
     text-align: center;
-    max-width: 800px;
+    max-width: 600px;
     padding: 75px 20px;
 }
 @media only screen and (min-width: 800px) {
